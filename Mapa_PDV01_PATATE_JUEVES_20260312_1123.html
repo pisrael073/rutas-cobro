@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e56ba8d00b9787210585d94a47a6e7b7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map { position:fixed; top:120px; left:0; right:0; bottom:0; height:auto !important; width:100% !important; z-index:1; 
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_div {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map { position:fixed; top:120px; left:0; right:0; bottom:0; height:auto !important; width:100% !important; z-index:1; 
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body><div style='font-family:Arial;background:#1a2e4a;color:white;padding:10px 16px;'><b style='font-size:16px;'>🗺️ Ruta: PDV01 PATATE JUEVES</b><span style='font-size:11px;opacity:.8;margin-left:12px;'>DELGADO ESPINOSA MAURO</span><span style='font-size:10px;opacity:.6;margin-left:12px;'>12/03/2026 11:23</span></div><div style='display:flex;gap:20px;padding:8px 16px;background:white;border-bottom:3px solid #3498db;font-family:Arial;flex-wrap:wrap;'><div><b style='font-size:18px;color:#1a2e4a;'>15</b><br><span style='font-size:11px;color:#666;'>👥 Clientes</span></div><div><b style='font-size:18px;color:#c0392b;'>$981.94</b><br><span style='font-size:11px;color:#666;'>💰 Deuda</span></div><div><b style='font-size:18px;color:#1a2e4a;'>12/15</b><br><span style='font-size:11px;color:#666;'>📍 Con GPS</span></div><div><b style='font-size:18px;color:#1a2e4a;'>2.7 km</b><br><span style='font-size:11px;color:#666;'>🛣️ Recorrido</span></div></div>
+    
+    <div style='position:fixed;bottom:30px;left:10px;z-index:9999;background:rgba(255,255,255,.97);border:1px solid #ddd;border-radius:10px;padding:10px 14px;font-family:Arial;box-shadow:0 4px 16px rgba(0,0,0,.2);min-width:130px;'><div style='font-size:12px;font-weight:bold;color:#1a2e4a;border-bottom:2px solid #3498db;padding-bottom:4px;margin-bottom:6px;'>Estado cobranza</div><div style='display:flex;align-items:center;gap:6px;margin:3px 0;'><div style='width:14px;height:14px;background:#27ae60;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.3);'></div><span style='font-size:12px;color:#2c3e50;'>Pago</span></div><div style='display:flex;align-items:center;gap:6px;margin:3px 0;'><div style='width:14px;height:14px;background:#e67e22;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.3);'></div><span style='font-size:12px;color:#2c3e50;'>Tramite</span></div><div style='display:flex;align-items:center;gap:6px;margin:3px 0;'><div style='width:14px;height:14px;background:#e74c3c;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.3);'></div><span style='font-size:12px;color:#2c3e50;'>Legal</span></div><div style='display:flex;align-items:center;gap:6px;margin:3px 0;'><div style='width:14px;height:14px;background:#8e44ad;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.3);'></div><span style='font-size:12px;color:#2c3e50;'>Negativa</span></div><div style='display:flex;align-items:center;gap:6px;margin:3px 0;'><div style='width:14px;height:14px;background:#2980b9;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.3);'></div><span style='font-size:12px;color:#2c3e50;'>Seguimiento</span></div><div style='display:flex;align-items:center;gap:6px;margin:3px 0;'><div style='width:14px;height:14px;background:#95a5a6;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.3);'></div><span style='font-size:12px;color:#2c3e50;'>Sin</span></div><div style='margin-top:6px;padding-top:6px;border-top:1px solid #eee;'><div style='display:flex;align-items:center;gap:6px;'><div style='width:28px;height:4px;background:#2471a3;border-radius:2px;'></div><span style='font-size:11px;color:#555;'>Recorrido</span></div><div style='display:flex;align-items:center;gap:6px;margin-top:3px;'><div style='width:14px;height:14px;background:white;border-radius:50%;border:4px solid #f39c12;'></div><span style='font-size:11px;color:#555;'>Novedad</span></div></div></div>
+    
+            <div class="folium-map" id="map_e56ba8d00b9787210585d94a47a6e7b7" ></div>
+        
+    
+            <div class="folium-map" id="map_div" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e56ba8d00b9787210585d94a47a6e7b7 = L.map(
+                "map_e56ba8d00b9787210585d94a47a6e7b7",
+                {
+                    center: [-1.3114251666666668, -78.50806983333334],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+
+            
+
+        
+    
+            var tile_layer_b9064a23247502e68b658082c7806a50 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOSM\u003c/a\u003e \u0026copy; \u003ca href=\"https://carto.com/\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b9064a23247502e68b658082c7806a50.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var marker_cluster_57c2911b73033717f33759e44661eaad = L.markerClusterGroup(
+                {
+  "maxClusterRadius": 30,
+  "disableClusteringAtZoom": 16,
+  "spiderfyOnMaxZoom": true,
+}
+            );
+        
+    
+            var marker_ddebadda6b7a8e23dc5004462d67fed2 = L.marker(
+                [-1.301343, -78.51785],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_b401092183bdea63048f677d89090da2 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e1\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eJORGE PILLA  NSC\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$19\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_60a8300706201f9f5e7be034b615c8b0 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a86600d450ade8580c0b3021ad474966 = $(`<div id="html_a86600d450ade8580c0b3021ad474966" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#1 — JORGE PILLA  NSC**</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000352355</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$19.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>63 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.301343,-78.517850' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_60a8300706201f9f5e7be034b615c8b0.setContent(html_a86600d450ade8580c0b3021ad474966);
+            
+        
+
+        marker_ddebadda6b7a8e23dc5004462d67fed2.bindPopup(popup_60a8300706201f9f5e7be034b615c8b0)
+        ;
+
+        
+    
+    
+            marker_ddebadda6b7a8e23dc5004462d67fed2.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#1 JORGE PILLA  NSC**</b><br>💰 $19.00 | 📅 63d<br>📋 001-002-000352355
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ddebadda6b7a8e23dc5004462d67fed2.setIcon(div_icon_b401092183bdea63048f677d89090da2);
+            
+    
+            var marker_fa0307ed50244f256cfde4bed147cd3e = L.marker(
+                [-1.311684, -78.508152],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_786fc14218492cc5389e3ceb2e7db194 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e2\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eERAZO SORIA VICE\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$26\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_f9a9af8005b00a2dd7281a5bfa5cdaca = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_97408392897bd37cc47ecb04f4c002fe = $(`<div id="html_97408392897bd37cc47ecb04f4c002fe" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#2 — ERAZO SORIA VICENTE ALFONSO</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 1.6 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000363560</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$26.28</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>7 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311684,-78.508152' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_f9a9af8005b00a2dd7281a5bfa5cdaca.setContent(html_97408392897bd37cc47ecb04f4c002fe);
+            
+        
+
+        marker_fa0307ed50244f256cfde4bed147cd3e.bindPopup(popup_f9a9af8005b00a2dd7281a5bfa5cdaca)
+        ;
+
+        
+    
+    
+            marker_fa0307ed50244f256cfde4bed147cd3e.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#2 ERAZO SORIA VICENTE AL</b><br>💰 $26.28 | 📅 7d<br>📋 001-002-000363560
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa0307ed50244f256cfde4bed147cd3e.setIcon(div_icon_786fc14218492cc5389e3ceb2e7db194);
+            
+    
+            var marker_6c3f6dcb9dca4bb7087766ad9676226f = L.marker(
+                [-1.311763, -78.508084],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_cf73f36207583e8b79786860ca1d6874 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e3\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eSAILEMA PLAZA LU\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$21\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_b5d4b7e29b00c35691be62f1d04a6158 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_9d733c4b4d8e4495e3ab3dcd84143c57 = $(`<div id="html_9d733c4b4d8e4495e3ab3dcd84143c57" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#3 — SAILEMA PLAZA LUIS MARIO</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000363644</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$20.74</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>7 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311763,-78.508084' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_b5d4b7e29b00c35691be62f1d04a6158.setContent(html_9d733c4b4d8e4495e3ab3dcd84143c57);
+            
+        
+
+        marker_6c3f6dcb9dca4bb7087766ad9676226f.bindPopup(popup_b5d4b7e29b00c35691be62f1d04a6158)
+        ;
+
+        
+    
+    
+            marker_6c3f6dcb9dca4bb7087766ad9676226f.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#3 SAILEMA PLAZA LUIS MAR</b><br>💰 $20.74 | 📅 7d<br>📋 001-002-000363644
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c3f6dcb9dca4bb7087766ad9676226f.setIcon(div_icon_cf73f36207583e8b79786860ca1d6874);
+            
+    
+            var marker_134b7930e7f84d9475d2531fe4812779 = L.marker(
+                [-1.311711, -78.507999],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_4d3849d858fa9b643ed229a7226f28d7 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e4\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA CAICEDO A\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$331\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_82843fe76be8916d9aeb8098dcdfeab2 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_60db3922653f1f84153497fb12aab54f = $(`<div id="html_60db3922653f1f84153497fb12aab54f" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#4 — CEPEDA CAICEDO AIDA JIMENA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000353529</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$330.72</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#e67e22;text-align:right;'>56 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311711,-78.507999' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_82843fe76be8916d9aeb8098dcdfeab2.setContent(html_60db3922653f1f84153497fb12aab54f);
+            
+        
+
+        marker_134b7930e7f84d9475d2531fe4812779.bindPopup(popup_82843fe76be8916d9aeb8098dcdfeab2)
+        ;
+
+        
+    
+    
+            marker_134b7930e7f84d9475d2531fe4812779.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#4 CEPEDA CAICEDO AIDA JI</b><br>💰 $330.72 | 📅 56d<br>📋 001-002-000353529
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_134b7930e7f84d9475d2531fe4812779.setIcon(div_icon_4d3849d858fa9b643ed229a7226f28d7);
+            
+    
+            var marker_3751cf5086c747db57375f570bbf2f55 = L.marker(
+                [-1.311711, -78.507999],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_b677d83b4689b44630be4d3809249e15 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e5\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA CAICEDO A\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$169\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_b47ddf24decce3df279ee6cfb6f120fe = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_692c7f7f9232777810fb300955c7277d = $(`<div id="html_692c7f7f9232777810fb300955c7277d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#5 — CEPEDA CAICEDO AIDA JIMENA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000362097</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$168.58</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>14 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311711,-78.507999' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_b47ddf24decce3df279ee6cfb6f120fe.setContent(html_692c7f7f9232777810fb300955c7277d);
+            
+        
+
+        marker_3751cf5086c747db57375f570bbf2f55.bindPopup(popup_b47ddf24decce3df279ee6cfb6f120fe)
+        ;
+
+        
+    
+    
+            marker_3751cf5086c747db57375f570bbf2f55.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#5 CEPEDA CAICEDO AIDA JI</b><br>💰 $168.58 | 📅 14d<br>📋 001-002-000362097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3751cf5086c747db57375f570bbf2f55.setIcon(div_icon_b677d83b4689b44630be4d3809249e15);
+            
+    
+            var marker_875d09ecbda8b6b5c3c2681b528ecac1 = L.marker(
+                [-1.311371, -78.507144],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_e9009edb2716584a35099f17328d193f = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e6\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCAIZA TIBANQUIZA\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$10\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_1878ae5bd97d6a57605f6ca6a814a35d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_90cf9a6f0cb93a853f82471969bc7c71 = $(`<div id="html_90cf9a6f0cb93a853f82471969bc7c71" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#6 — CAIZA TIBANQUIZA TATIANA VAL</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000360392</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$9.98</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>21 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311371,-78.507144' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_1878ae5bd97d6a57605f6ca6a814a35d.setContent(html_90cf9a6f0cb93a853f82471969bc7c71);
+            
+        
+
+        marker_875d09ecbda8b6b5c3c2681b528ecac1.bindPopup(popup_1878ae5bd97d6a57605f6ca6a814a35d)
+        ;
+
+        
+    
+    
+            marker_875d09ecbda8b6b5c3c2681b528ecac1.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#6 CAIZA TIBANQUIZA TATIA</b><br>💰 $9.98 | 📅 21d<br>📋 001-002-000360392
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_875d09ecbda8b6b5c3c2681b528ecac1.setIcon(div_icon_e9009edb2716584a35099f17328d193f);
+            
+    
+            var marker_7fe9835551eb32c1b6a9e241ff7b0deb = L.marker(
+                [-1.311383, -78.507117],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_eb04303c751646f1c6b20ab77ac3942b = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e7\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA CARDENAS \u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$58\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_fd5d990d00d9ff5fe0901536c1296f75 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2473a8d8985fbfbebdb949260567aa52 = $(`<div id="html_2473a8d8985fbfbebdb949260567aa52" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#7 — CEPEDA CARDENAS ALEX RONALDO</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000359424</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$58.03</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>28 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311383,-78.507117' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_fd5d990d00d9ff5fe0901536c1296f75.setContent(html_2473a8d8985fbfbebdb949260567aa52);
+            
+        
+
+        marker_7fe9835551eb32c1b6a9e241ff7b0deb.bindPopup(popup_fd5d990d00d9ff5fe0901536c1296f75)
+        ;
+
+        
+    
+    
+            marker_7fe9835551eb32c1b6a9e241ff7b0deb.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#7 CEPEDA CARDENAS ALEX R</b><br>💰 $58.03 | 📅 28d<br>📋 001-002-000359424
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7fe9835551eb32c1b6a9e241ff7b0deb.setIcon(div_icon_eb04303c751646f1c6b20ab77ac3942b);
+            
+    
+            var marker_a9344feebc4e3c9083376c0c951e262f = L.marker(
+                [-1.311346, -78.507092],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_103ec1b48fe842a6d62afd29fdd20155 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e8\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCARDENAS NAVEDA \u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$98\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_a7b31b050257cc996d72d3aa6a846f13 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7f514c15986ddfe4d24b9b74f133a020 = $(`<div id="html_7f514c15986ddfe4d24b9b74f133a020" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#8 — CARDENAS NAVEDA NORMA JEANNE</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000356504</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$98.39</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#e67e22;text-align:right;'>42 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311346,-78.507092' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_a7b31b050257cc996d72d3aa6a846f13.setContent(html_7f514c15986ddfe4d24b9b74f133a020);
+            
+        
+
+        marker_a9344feebc4e3c9083376c0c951e262f.bindPopup(popup_a7b31b050257cc996d72d3aa6a846f13)
+        ;
+
+        
+    
+    
+            marker_a9344feebc4e3c9083376c0c951e262f.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#8 CARDENAS NAVEDA NORMA </b><br>💰 $98.39 | 📅 42d<br>📋 001-002-000356504
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9344feebc4e3c9083376c0c951e262f.setIcon(div_icon_103ec1b48fe842a6d62afd29fdd20155);
+            
+    
+            var marker_afda4c2f50a99b1ee323d76062d54a91 = L.marker(
+                [-1.310924, -78.507042],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_1d41ba25ea176b89c7169e97cdfcd5a3 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e9\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eMANOSIN TITE MIN\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$41\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_6afff4c808fbb8faaef34820ce35b61a = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f181fec872b52eeb0173b90cf153b52a = $(`<div id="html_f181fec872b52eeb0173b90cf153b52a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#9 — MANOSIN TITE MINICA LIVIA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000348080</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$40.61</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>91 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.310924,-78.507042' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_6afff4c808fbb8faaef34820ce35b61a.setContent(html_f181fec872b52eeb0173b90cf153b52a);
+            
+        
+
+        marker_afda4c2f50a99b1ee323d76062d54a91.bindPopup(popup_6afff4c808fbb8faaef34820ce35b61a)
+        ;
+
+        
+    
+    
+            marker_afda4c2f50a99b1ee323d76062d54a91.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#9 MANOSIN TITE MINICA LI</b><br>💰 $40.61 | 📅 91d<br>📋 001-002-000348080
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afda4c2f50a99b1ee323d76062d54a91.setIcon(div_icon_1d41ba25ea176b89c7169e97cdfcd5a3);
+            
+    
+            var marker_7e8524edd8f74de66ed62f6cbcde9e73 = L.marker(
+                [-1.312096, -78.507058],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_6db0396ef33754ce3d7991aadf8a5952 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e10\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eRAMOS FREDY\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$67\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_bc20743ebdb96cdf9a2e98b51f99b0ed = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_da36d716e9241e46576923e052af5b6d = $(`<div id="html_da36d716e9241e46576923e052af5b6d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#10 — RAMOS FREDY</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000362002</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$67.08</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>14 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.312096,-78.507058' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_bc20743ebdb96cdf9a2e98b51f99b0ed.setContent(html_da36d716e9241e46576923e052af5b6d);
+            
+        
+
+        marker_7e8524edd8f74de66ed62f6cbcde9e73.bindPopup(popup_bc20743ebdb96cdf9a2e98b51f99b0ed)
+        ;
+
+        
+    
+    
+            marker_7e8524edd8f74de66ed62f6cbcde9e73.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#10 RAMOS FREDY</b><br>💰 $67.08 | 📅 14d<br>📋 001-002-000362002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7e8524edd8f74de66ed62f6cbcde9e73.setIcon(div_icon_6db0396ef33754ce3d7991aadf8a5952);
+            
+    
+            var marker_49b784c8cfc76b6ea3c374686086fbff = L.marker(
+                [-1.313109, -78.507115],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_feea74c81d00805da3afdc99ab459097 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e11\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eTORRES SOLIS DIA\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$51\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_d1a34c5cefd50eae233e8b1df067d746 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5cf8822a548edb9163079b217b8b64ec = $(`<div id="html_5cf8822a548edb9163079b217b8b64ec" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#11 — TORRES SOLIS DIANA PATRICIA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000352301</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$50.51</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>63 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.313109,-78.507115' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_d1a34c5cefd50eae233e8b1df067d746.setContent(html_5cf8822a548edb9163079b217b8b64ec);
+            
+        
+
+        marker_49b784c8cfc76b6ea3c374686086fbff.bindPopup(popup_d1a34c5cefd50eae233e8b1df067d746)
+        ;
+
+        
+    
+    
+            marker_49b784c8cfc76b6ea3c374686086fbff.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#11 TORRES SOLIS DIANA PAT</b><br>💰 $50.51 | 📅 63d<br>📋 001-002-000352301
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_49b784c8cfc76b6ea3c374686086fbff.setIcon(div_icon_feea74c81d00805da3afdc99ab459097);
+            
+    
+            var marker_ee10bf905907cdb5e6eaa2071e50f8ae = L.marker(
+                [-1.318661, -78.504186],
+                {
+}
+            ).addTo(marker_cluster_57c2911b73033717f33759e44661eaad);
+        
+    
+            var div_icon_1db0b2e6d25b9f019f0a5855daf97d4e = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e12\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA GUARACA I\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$10\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_0e68ef97208c907d58ad78c800ecb7a8 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a0a99970747c525c43ad510700cf952f = $(`<div id="html_a0a99970747c525c43ad510700cf952f" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#12 — CEPEDA GUARACA IRMA  SORAYA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.7 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000362087</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$10.23</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>14 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.318661,-78.504186' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_0e68ef97208c907d58ad78c800ecb7a8.setContent(html_a0a99970747c525c43ad510700cf952f);
+            
+        
+
+        marker_ee10bf905907cdb5e6eaa2071e50f8ae.bindPopup(popup_0e68ef97208c907d58ad78c800ecb7a8)
+        ;
+
+        
+    
+    
+            marker_ee10bf905907cdb5e6eaa2071e50f8ae.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#12 CEPEDA GUARACA IRMA  S</b><br>💰 $10.23 | 📅 14d<br>📋 001-002-000362087
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee10bf905907cdb5e6eaa2071e50f8ae.setIcon(div_icon_1db0b2e6d25b9f019f0a5855daf97d4e);
+            
+    
+            marker_cluster_57c2911b73033717f33759e44661eaad.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var poly_line_09489870a6543860eea7b5a16a7c37ee = L.polyline(
+                [[-1.301343, -78.51785], [-1.311684, -78.508152], [-1.311763, -78.508084], [-1.311711, -78.507999], [-1.311711, -78.507999], [-1.311371, -78.507144], [-1.311383, -78.507117], [-1.311346, -78.507092], [-1.310924, -78.507042], [-1.312096, -78.507058], [-1.313109, -78.507115], [-1.318661, -78.504186]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.15, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var poly_line_e91ccb50123295adad94d4011eed096d = L.polyline(
+                [[-1.301343, -78.51785], [-1.311684, -78.508152], [-1.311763, -78.508084], [-1.311711, -78.507999], [-1.311711, -78.507999], [-1.311371, -78.507144], [-1.311383, -78.507117], [-1.311346, -78.507092], [-1.310924, -78.507042], [-1.312096, -78.507058], [-1.313109, -78.507115], [-1.318661, -78.504186]],
+                {"bubblingMouseEvents": true, "color": "#2471a3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2471a3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            poly_line_e91ccb50123295adad94d4011eed096d.bindTooltip(
+                `<div>
+                     Recorrido optimizado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_caa07d5e5d9713979d57398faf9c6257 = L.polyline(
+                [[-1.301343, -78.51785], [-1.311684, -78.508152], [-1.311763, -78.508084], [-1.311711, -78.507999], [-1.311711, -78.507999], [-1.311371, -78.507144], [-1.311383, -78.507117], [-1.311346, -78.507092], [-1.310924, -78.507042], [-1.312096, -78.507058], [-1.313109, -78.507115], [-1.318661, -78.504186]],
+                {"bubblingMouseEvents": true, "color": "#85c1e9", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#85c1e9", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_b6929358dea47510ecf5d2c4db0c0188 = new L.RegularPolygonMarker(
+                [-1.3065134999999999, -78.513001],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 46.83784370969235,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_bd4eca4f258d23c82b7d244e35a93f06 = new L.RegularPolygonMarker(
+                [-1.3117235, -78.508118],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 49.27946353070422,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_245be3e9e5ca37e746b3011f73d5f312 = new L.RegularPolygonMarker(
+                [-1.311737, -78.50804149999999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -31.45682335795886,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_e77821021db66482102d3db51ec08d23 = new L.RegularPolygonMarker(
+                [-1.311711, -78.507999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -90.0,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_c66628201fe174bfab4636400a3dab4d = new L.RegularPolygonMarker(
+                [-1.311541, -78.5075715],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -21.68577739403986,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_cb62598ad3bdf967079967b92b67a69f = new L.RegularPolygonMarker(
+                [-1.311377, -78.50713049999999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 23.96248897212992,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_732ca736a4ec93dc335dc25d6a474976 = new L.RegularPolygonMarker(
+                [-1.3113644999999998, -78.5071045],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -55.95406265011674,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_dc7346ba3c58671336278b555ffd363e = new L.RegularPolygonMarker(
+                [-1.311135, -78.507067],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -83.24290245527064,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_40c7a910762bdce2449c4a35c93aa453 = new L.RegularPolygonMarker(
+                [-1.31151, -78.50704999999999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -269.217853645834,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_61a88fe37f30e71f607a06708109b467 = new L.RegularPolygonMarker(
+                [-1.3126025000000001, -78.5070865],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -266.77944794003486,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var regular_polygon_marker_30be532ce0ce7217662b821a84c389dc = new L.RegularPolygonMarker(
+                [-1.3158850000000002, -78.5056505],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 62.185769711107014,
+}
+            ).addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            tile_layer_b9064a23247502e68b658082c7806a50.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+                marker_ddebadda6b7a8e23dc5004462d67fed2.setIcon(div_icon_b401092183bdea63048f677d89090da2);
+            
+    
+                marker_fa0307ed50244f256cfde4bed147cd3e.setIcon(div_icon_786fc14218492cc5389e3ceb2e7db194);
+            
+    
+                marker_6c3f6dcb9dca4bb7087766ad9676226f.setIcon(div_icon_cf73f36207583e8b79786860ca1d6874);
+            
+    
+                marker_134b7930e7f84d9475d2531fe4812779.setIcon(div_icon_4d3849d858fa9b643ed229a7226f28d7);
+            
+    
+                marker_3751cf5086c747db57375f570bbf2f55.setIcon(div_icon_b677d83b4689b44630be4d3809249e15);
+            
+    
+                marker_875d09ecbda8b6b5c3c2681b528ecac1.setIcon(div_icon_e9009edb2716584a35099f17328d193f);
+            
+    
+                marker_7fe9835551eb32c1b6a9e241ff7b0deb.setIcon(div_icon_eb04303c751646f1c6b20ab77ac3942b);
+            
+    
+                marker_a9344feebc4e3c9083376c0c951e262f.setIcon(div_icon_103ec1b48fe842a6d62afd29fdd20155);
+            
+    
+                marker_afda4c2f50a99b1ee323d76062d54a91.setIcon(div_icon_1d41ba25ea176b89c7169e97cdfcd5a3);
+            
+    
+                marker_7e8524edd8f74de66ed62f6cbcde9e73.setIcon(div_icon_6db0396ef33754ce3d7991aadf8a5952);
+            
+    
+                marker_49b784c8cfc76b6ea3c374686086fbff.setIcon(div_icon_feea74c81d00805da3afdc99ab459097);
+            
+    
+                marker_ee10bf905907cdb5e6eaa2071e50f8ae.setIcon(div_icon_1db0b2e6d25b9f019f0a5855daf97d4e);
+            
+    
+            marker_cluster_57c2911b73033717f33759e44661eaad.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            tile_layer_b9064a23247502e68b658082c7806a50.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+                marker_ddebadda6b7a8e23dc5004462d67fed2.setIcon(div_icon_b401092183bdea63048f677d89090da2);
+            
+    
+                marker_fa0307ed50244f256cfde4bed147cd3e.setIcon(div_icon_786fc14218492cc5389e3ceb2e7db194);
+            
+    
+                marker_6c3f6dcb9dca4bb7087766ad9676226f.setIcon(div_icon_cf73f36207583e8b79786860ca1d6874);
+            
+    
+                marker_134b7930e7f84d9475d2531fe4812779.setIcon(div_icon_4d3849d858fa9b643ed229a7226f28d7);
+            
+    
+                marker_3751cf5086c747db57375f570bbf2f55.setIcon(div_icon_b677d83b4689b44630be4d3809249e15);
+            
+    
+                marker_875d09ecbda8b6b5c3c2681b528ecac1.setIcon(div_icon_e9009edb2716584a35099f17328d193f);
+            
+    
+                marker_7fe9835551eb32c1b6a9e241ff7b0deb.setIcon(div_icon_eb04303c751646f1c6b20ab77ac3942b);
+            
+    
+                marker_a9344feebc4e3c9083376c0c951e262f.setIcon(div_icon_103ec1b48fe842a6d62afd29fdd20155);
+            
+    
+                marker_afda4c2f50a99b1ee323d76062d54a91.setIcon(div_icon_1d41ba25ea176b89c7169e97cdfcd5a3);
+            
+    
+                marker_7e8524edd8f74de66ed62f6cbcde9e73.setIcon(div_icon_6db0396ef33754ce3d7991aadf8a5952);
+            
+    
+                marker_49b784c8cfc76b6ea3c374686086fbff.setIcon(div_icon_feea74c81d00805da3afdc99ab459097);
+            
+    
+                marker_ee10bf905907cdb5e6eaa2071e50f8ae.setIcon(div_icon_1db0b2e6d25b9f019f0a5855daf97d4e);
+            
+    
+            marker_cluster_57c2911b73033717f33759e44661eaad.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            var map_div = L.map(
+                "map_div",
+                {
+                    center: [-1.3114251666666668, -78.50806983333334],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_div);
+
+            
+
+        
+    
+            var tile_layer_div_0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOSM\u003c/a\u003e \u0026copy; \u003ca href=\"https://carto.com/\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b9064a23247502e68b658082c7806a50.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            tile_layer_div_0.addTo(map_div);
+        
+    
+            var marker_cluster_div_1 = L.markerClusterGroup(
+                {
+  "maxClusterRadius": 30,
+  "disableClusteringAtZoom": 16,
+  "spiderfyOnMaxZoom": true,
+}
+            );
+        
+    
+            var marker_div_1_0 = L.marker(
+                [-1.301343, -78.51785],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_0_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e1\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eJORGE PILLA  NSC\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$19\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_0_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a86600d450ade8580c0b3021ad474966 = $(`<div id="html_a86600d450ade8580c0b3021ad474966" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#1 — JORGE PILLA  NSC**</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000352355</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$19.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>63 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.301343,-78.517850' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_0_1.setContent(html_a86600d450ade8580c0b3021ad474966);
+            
+        
+
+        marker_div_1_0.bindPopup(popup_div_1_0_1)
+        ;
+
+        
+    
+    
+            marker_div_1_0.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#1 JORGE PILLA  NSC**</b><br>💰 $19.00 | 📅 63d<br>📋 001-002-000352355
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_0.setIcon(div_icon_div_1_0_0);
+            
+    
+                marker_div_1_0.setIcon(div_icon_div_1_0_0);
+            
+    
+                marker_div_1_0.setIcon(div_icon_div_1_0_0);
+            
+    
+                marker_div_1_0.setIcon(div_icon_div_1_0_0);
+            
+    
+            var marker_div_1_1 = L.marker(
+                [-1.311684, -78.508152],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_1_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e2\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eERAZO SORIA VICE\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$26\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_1_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_97408392897bd37cc47ecb04f4c002fe = $(`<div id="html_97408392897bd37cc47ecb04f4c002fe" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#2 — ERAZO SORIA VICENTE ALFONSO</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 1.6 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000363560</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$26.28</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>7 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311684,-78.508152' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_1_1.setContent(html_97408392897bd37cc47ecb04f4c002fe);
+            
+        
+
+        marker_div_1_1.bindPopup(popup_div_1_1_1)
+        ;
+
+        
+    
+    
+            marker_div_1_1.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#2 ERAZO SORIA VICENTE AL</b><br>💰 $26.28 | 📅 7d<br>📋 001-002-000363560
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_1.setIcon(div_icon_div_1_1_0);
+            
+    
+                marker_div_1_1.setIcon(div_icon_div_1_1_0);
+            
+    
+                marker_div_1_1.setIcon(div_icon_div_1_1_0);
+            
+    
+                marker_div_1_1.setIcon(div_icon_div_1_1_0);
+            
+    
+            var marker_div_1_2 = L.marker(
+                [-1.311763, -78.508084],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_2_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e3\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eSAILEMA PLAZA LU\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$21\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_2_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_9d733c4b4d8e4495e3ab3dcd84143c57 = $(`<div id="html_9d733c4b4d8e4495e3ab3dcd84143c57" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#3 — SAILEMA PLAZA LUIS MARIO</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000363644</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$20.74</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>7 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311763,-78.508084' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_2_1.setContent(html_9d733c4b4d8e4495e3ab3dcd84143c57);
+            
+        
+
+        marker_div_1_2.bindPopup(popup_div_1_2_1)
+        ;
+
+        
+    
+    
+            marker_div_1_2.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#3 SAILEMA PLAZA LUIS MAR</b><br>💰 $20.74 | 📅 7d<br>📋 001-002-000363644
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_2.setIcon(div_icon_div_1_2_0);
+            
+    
+                marker_div_1_2.setIcon(div_icon_div_1_2_0);
+            
+    
+                marker_div_1_2.setIcon(div_icon_div_1_2_0);
+            
+    
+                marker_div_1_2.setIcon(div_icon_div_1_2_0);
+            
+    
+            var marker_div_1_3 = L.marker(
+                [-1.311711, -78.507999],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_3_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e4\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA CAICEDO A\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$331\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_3_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_60db3922653f1f84153497fb12aab54f = $(`<div id="html_60db3922653f1f84153497fb12aab54f" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#4 — CEPEDA CAICEDO AIDA JIMENA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000353529</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$330.72</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#e67e22;text-align:right;'>56 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311711,-78.507999' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_3_1.setContent(html_60db3922653f1f84153497fb12aab54f);
+            
+        
+
+        marker_div_1_3.bindPopup(popup_div_1_3_1)
+        ;
+
+        
+    
+    
+            marker_div_1_3.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#4 CEPEDA CAICEDO AIDA JI</b><br>💰 $330.72 | 📅 56d<br>📋 001-002-000353529
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_3.setIcon(div_icon_div_1_3_0);
+            
+    
+                marker_div_1_3.setIcon(div_icon_div_1_3_0);
+            
+    
+                marker_div_1_3.setIcon(div_icon_div_1_3_0);
+            
+    
+                marker_div_1_3.setIcon(div_icon_div_1_3_0);
+            
+    
+            var marker_div_1_4 = L.marker(
+                [-1.311711, -78.507999],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_4_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e5\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA CAICEDO A\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$169\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_4_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_692c7f7f9232777810fb300955c7277d = $(`<div id="html_692c7f7f9232777810fb300955c7277d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#5 — CEPEDA CAICEDO AIDA JIMENA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000362097</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$168.58</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>14 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311711,-78.507999' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_4_1.setContent(html_692c7f7f9232777810fb300955c7277d);
+            
+        
+
+        marker_div_1_4.bindPopup(popup_div_1_4_1)
+        ;
+
+        
+    
+    
+            marker_div_1_4.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#5 CEPEDA CAICEDO AIDA JI</b><br>💰 $168.58 | 📅 14d<br>📋 001-002-000362097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_4.setIcon(div_icon_div_1_4_0);
+            
+    
+                marker_div_1_4.setIcon(div_icon_div_1_4_0);
+            
+    
+                marker_div_1_4.setIcon(div_icon_div_1_4_0);
+            
+    
+                marker_div_1_4.setIcon(div_icon_div_1_4_0);
+            
+    
+            var marker_div_1_5 = L.marker(
+                [-1.311371, -78.507144],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_5_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e6\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCAIZA TIBANQUIZA\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$10\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_5_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_90cf9a6f0cb93a853f82471969bc7c71 = $(`<div id="html_90cf9a6f0cb93a853f82471969bc7c71" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#6 — CAIZA TIBANQUIZA TATIANA VAL</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000360392</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$9.98</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>21 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311371,-78.507144' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_5_1.setContent(html_90cf9a6f0cb93a853f82471969bc7c71);
+            
+        
+
+        marker_div_1_5.bindPopup(popup_div_1_5_1)
+        ;
+
+        
+    
+    
+            marker_div_1_5.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#6 CAIZA TIBANQUIZA TATIA</b><br>💰 $9.98 | 📅 21d<br>📋 001-002-000360392
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_5.setIcon(div_icon_div_1_5_0);
+            
+    
+                marker_div_1_5.setIcon(div_icon_div_1_5_0);
+            
+    
+                marker_div_1_5.setIcon(div_icon_div_1_5_0);
+            
+    
+                marker_div_1_5.setIcon(div_icon_div_1_5_0);
+            
+    
+            var marker_div_1_6 = L.marker(
+                [-1.311383, -78.507117],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_6_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e7\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA CARDENAS \u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$58\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_6_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_2473a8d8985fbfbebdb949260567aa52 = $(`<div id="html_2473a8d8985fbfbebdb949260567aa52" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#7 — CEPEDA CARDENAS ALEX RONALDO</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000359424</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$58.03</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>28 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311383,-78.507117' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_6_1.setContent(html_2473a8d8985fbfbebdb949260567aa52);
+            
+        
+
+        marker_div_1_6.bindPopup(popup_div_1_6_1)
+        ;
+
+        
+    
+    
+            marker_div_1_6.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#7 CEPEDA CARDENAS ALEX R</b><br>💰 $58.03 | 📅 28d<br>📋 001-002-000359424
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_6.setIcon(div_icon_div_1_6_0);
+            
+    
+                marker_div_1_6.setIcon(div_icon_div_1_6_0);
+            
+    
+                marker_div_1_6.setIcon(div_icon_div_1_6_0);
+            
+    
+                marker_div_1_6.setIcon(div_icon_div_1_6_0);
+            
+    
+            var marker_div_1_7 = L.marker(
+                [-1.311346, -78.507092],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_7_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e8\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCARDENAS NAVEDA \u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$98\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_7_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_7f514c15986ddfe4d24b9b74f133a020 = $(`<div id="html_7f514c15986ddfe4d24b9b74f133a020" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#8 — CARDENAS NAVEDA NORMA JEANNE</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.0 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000356504</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$98.39</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#e67e22;text-align:right;'>42 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.311346,-78.507092' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_7_1.setContent(html_7f514c15986ddfe4d24b9b74f133a020);
+            
+        
+
+        marker_div_1_7.bindPopup(popup_div_1_7_1)
+        ;
+
+        
+    
+    
+            marker_div_1_7.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#8 CARDENAS NAVEDA NORMA </b><br>💰 $98.39 | 📅 42d<br>📋 001-002-000356504
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_7.setIcon(div_icon_div_1_7_0);
+            
+    
+                marker_div_1_7.setIcon(div_icon_div_1_7_0);
+            
+    
+                marker_div_1_7.setIcon(div_icon_div_1_7_0);
+            
+    
+                marker_div_1_7.setIcon(div_icon_div_1_7_0);
+            
+    
+            var marker_div_1_8 = L.marker(
+                [-1.310924, -78.507042],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_8_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e9\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eMANOSIN TITE MIN\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$41\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_8_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_f181fec872b52eeb0173b90cf153b52a = $(`<div id="html_f181fec872b52eeb0173b90cf153b52a" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#9 — MANOSIN TITE MINICA LIVIA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000348080</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$40.61</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>91 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.310924,-78.507042' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_8_1.setContent(html_f181fec872b52eeb0173b90cf153b52a);
+            
+        
+
+        marker_div_1_8.bindPopup(popup_div_1_8_1)
+        ;
+
+        
+    
+    
+            marker_div_1_8.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#9 MANOSIN TITE MINICA LI</b><br>💰 $40.61 | 📅 91d<br>📋 001-002-000348080
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_8.setIcon(div_icon_div_1_8_0);
+            
+    
+                marker_div_1_8.setIcon(div_icon_div_1_8_0);
+            
+    
+                marker_div_1_8.setIcon(div_icon_div_1_8_0);
+            
+    
+                marker_div_1_8.setIcon(div_icon_div_1_8_0);
+            
+    
+            var marker_div_1_9 = L.marker(
+                [-1.312096, -78.507058],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_9_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e10\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eRAMOS FREDY\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$67\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_9_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_da36d716e9241e46576923e052af5b6d = $(`<div id="html_da36d716e9241e46576923e052af5b6d" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#10 — RAMOS FREDY</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000362002</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$67.08</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>14 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.312096,-78.507058' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_9_1.setContent(html_da36d716e9241e46576923e052af5b6d);
+            
+        
+
+        marker_div_1_9.bindPopup(popup_div_1_9_1)
+        ;
+
+        
+    
+    
+            marker_div_1_9.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#10 RAMOS FREDY</b><br>💰 $67.08 | 📅 14d<br>📋 001-002-000362002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_9.setIcon(div_icon_div_1_9_0);
+            
+    
+                marker_div_1_9.setIcon(div_icon_div_1_9_0);
+            
+    
+                marker_div_1_9.setIcon(div_icon_div_1_9_0);
+            
+    
+                marker_div_1_9.setIcon(div_icon_div_1_9_0);
+            
+    
+            var marker_div_1_10 = L.marker(
+                [-1.313109, -78.507115],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_10_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e11\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eTORRES SOLIS DIA\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$51\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_10_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5cf8822a548edb9163079b217b8b64ec = $(`<div id="html_5cf8822a548edb9163079b217b8b64ec" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#11 — TORRES SOLIS DIANA PATRICIA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.1 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000352301</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$50.51</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>63 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.313109,-78.507115' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_10_1.setContent(html_5cf8822a548edb9163079b217b8b64ec);
+            
+        
+
+        marker_div_1_10.bindPopup(popup_div_1_10_1)
+        ;
+
+        
+    
+    
+            marker_div_1_10.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#11 TORRES SOLIS DIANA PAT</b><br>💰 $50.51 | 📅 63d<br>📋 001-002-000352301
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_10.setIcon(div_icon_div_1_10_0);
+            
+    
+                marker_div_1_10.setIcon(div_icon_div_1_10_0);
+            
+    
+                marker_div_1_10.setIcon(div_icon_div_1_10_0);
+            
+    
+                marker_div_1_10.setIcon(div_icon_div_1_10_0);
+            
+    
+            var marker_div_1_11 = L.marker(
+                [-1.318661, -78.504186],
+                {
+}
+            ).addTo(marker_cluster_div_1);
+        
+    
+            var div_icon_div_1_11_0 = L.divIcon({
+  "html": "\u003cdiv style=\"display:flex;flex-direction:column;align-items:center;width:64px;\"\u003e\u003cdiv style=\"background:#95a5a6;border:3px solid white;border-radius:50% 50% 50% 0;transform:rotate(-45deg);width:44px;height:44px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.55);\"\u003e\u003cdiv style=\"transform:rotate(45deg);text-align:center;\"\u003e\u003cdiv style=\"font-weight:900;font-size:17px;color:white;font-family:Arial;text-shadow:0 1px 3px rgba(0,0,0,.7);\"\u003e12\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\"margin-top:2px;background:rgba(26,46,74,.85);color:white;font-size:8px;font-weight:bold;font-family:Arial;padding:1px 4px;border-radius:3px;white-space:nowrap;max-width:64px;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,.5);\"\u003eCEPEDA GUARACA I\u2026\u003c/div\u003e\u003cdiv style=\"margin-top:1px;background:#95a5a6;color:white;font-size:9px;font-weight:bold;font-family:Arial;padding:1px 5px;border-radius:3px;box-shadow:0 2px 4px rgba(0,0,0,.3);white-space:nowrap;\"\u003e$10\u003c/div\u003e\u003c/div\u003e",
+  "iconSize": [64, 80],
+  "iconAnchor": [32, 62],
+  "className": "empty",
+});
+        
+    
+        var popup_div_1_11_1 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_a0a99970747c525c43ad510700cf952f = $(`<div id="html_a0a99970747c525c43ad510700cf952f" style="width: 100.0%; height: 100.0%;"><div style='font-family:Arial;min-width:220px;border-radius:8px;overflow:hidden;'><div style='background:#95a5a6;color:white;padding:8px 10px;'><div style='font-weight:bold;font-size:13px;'>#12 — CEPEDA GUARACA IRMA  SORAYA</div><div style='font-size:10px;opacity:.85;margin-top:2px;'>📍 0.7 km del anterior</div></div><div style='padding:7px 10px;background:white;'><table style='width:100%;font-size:11px;border-collapse:collapse;'><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📋 Factura</td><td style='padding:3px 0;font-weight:bold;color:#1a2e4a;text-align:right;font-size:10px;'>001-002-000362087</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>💰 Saldo</td><td style='padding:3px 0;font-weight:bold;color:#c0392b;text-align:right;'>$10.23</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>✅ Abonado</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>$0.00</td></tr><tr style='border-bottom:1px solid #eee;'><td style='padding:3px 0;color:#666;'>📅 Días</td><td style='padding:3px 0;font-weight:bold;color:#27ae60;text-align:right;'>14 días</td></tr></table><div style='margin-top:5px;'><div style='font-size:10px;color:#666;margin-bottom:2px;'>Cobro: 0%</div><div style='background:#eee;border-radius:4px;height:7px;'><div style='background:#95a5a6;width:0%;height:7px;border-radius:4px;'></div></div></div><div style='text-align:center;margin-top:6px;padding-bottom:8px;'><a href='https://maps.google.com/?q=-1.318661,-78.504186' target='_blank' style='display:inline-block;background:#4285f4;color:white;font-size:11px;font-weight:bold;padding:4px 12px;border-radius:4px;text-decoration:none;'>📍 Google Maps</a></div></div></div></div>`)[0];
+                popup_div_1_11_1.setContent(html_a0a99970747c525c43ad510700cf952f);
+            
+        
+
+        marker_div_1_11.bindPopup(popup_div_1_11_1)
+        ;
+
+        
+    
+    
+            marker_div_1_11.bindTooltip(
+                `<div style="font-family:Arial;font-size:12px;">
+                     <b>#12 CEPEDA GUARACA IRMA  S</b><br>💰 $10.23 | 📅 14d<br>📋 001-002-000362087
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_div_1_11.setIcon(div_icon_div_1_11_0);
+            
+    
+                marker_div_1_11.setIcon(div_icon_div_1_11_0);
+            
+    
+                marker_div_1_11.setIcon(div_icon_div_1_11_0);
+            
+    
+                marker_div_1_11.setIcon(div_icon_div_1_11_0);
+            
+    
+            marker_cluster_57c2911b73033717f33759e44661eaad.addTo(map_e56ba8d00b9787210585d94a47a6e7b7);
+        
+    
+            marker_cluster_div_1.addTo(map_div);
+        
+    
+            var poly_line_div_2 = L.polyline(
+                [[-1.301343, -78.51785], [-1.311684, -78.508152], [-1.311763, -78.508084], [-1.311711, -78.507999], [-1.311711, -78.507999], [-1.311371, -78.507144], [-1.311383, -78.507117], [-1.311346, -78.507092], [-1.310924, -78.507042], [-1.312096, -78.507058], [-1.313109, -78.507115], [-1.318661, -78.504186]],
+                {"bubblingMouseEvents": true, "color": "#000000", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#000000", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.15, "smoothFactor": 1.0, "stroke": true, "weight": 7}
+            ).addTo(map_div);
+        
+    
+            var poly_line_div_3 = L.polyline(
+                [[-1.301343, -78.51785], [-1.311684, -78.508152], [-1.311763, -78.508084], [-1.311711, -78.507999], [-1.311711, -78.507999], [-1.311371, -78.507144], [-1.311383, -78.507117], [-1.311346, -78.507092], [-1.310924, -78.507042], [-1.312096, -78.507058], [-1.313109, -78.507115], [-1.318661, -78.504186]],
+                {"bubblingMouseEvents": true, "color": "#2471a3", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#2471a3", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_div);
+        
+    
+            poly_line_div_3.bindTooltip(
+                `<div>
+                     Recorrido optimizado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_div_4 = L.polyline(
+                [[-1.301343, -78.51785], [-1.311684, -78.508152], [-1.311763, -78.508084], [-1.311711, -78.507999], [-1.311711, -78.507999], [-1.311371, -78.507144], [-1.311383, -78.507117], [-1.311346, -78.507092], [-1.310924, -78.507042], [-1.312096, -78.507058], [-1.313109, -78.507115], [-1.318661, -78.504186]],
+                {"bubblingMouseEvents": true, "color": "#85c1e9", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#85c1e9", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_5 = new L.RegularPolygonMarker(
+                [-1.3065134999999999, -78.513001],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 46.83784370969235,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_6 = new L.RegularPolygonMarker(
+                [-1.3117235, -78.508118],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 49.27946353070422,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_7 = new L.RegularPolygonMarker(
+                [-1.311737, -78.50804149999999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -31.45682335795886,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_8 = new L.RegularPolygonMarker(
+                [-1.311711, -78.507999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -90.0,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_9 = new L.RegularPolygonMarker(
+                [-1.311541, -78.5075715],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -21.68577739403986,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_10 = new L.RegularPolygonMarker(
+                [-1.311377, -78.50713049999999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 23.96248897212992,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_11 = new L.RegularPolygonMarker(
+                [-1.3113644999999998, -78.5071045],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -55.95406265011674,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_12 = new L.RegularPolygonMarker(
+                [-1.311135, -78.507067],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -83.24290245527064,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_13 = new L.RegularPolygonMarker(
+                [-1.31151, -78.50704999999999],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -269.217853645834,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_14 = new L.RegularPolygonMarker(
+                [-1.3126025000000001, -78.5070865],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": -266.77944794003486,
+}
+            ).addTo(map_div);
+        
+    
+            var regular_polygon_marker_div_15 = new L.RegularPolygonMarker(
+                [-1.3158850000000002, -78.5056505],
+                {
+  "stroke": true,
+  "color": "#1a5276",
+  "weight": 1,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#2471a3",
+  "fillOpacity": 1.0,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 7,
+  "numberOfSides": 3,
+  "rotation": 62.185769711107014,
+}
+            ).addTo(map_div);
+        
+</script>
+</html>
